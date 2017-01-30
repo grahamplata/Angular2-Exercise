@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TeamsListComponent } from './teams/teams-list/teams-list.component';
 
 @Component({
   selector: 'app-root',
