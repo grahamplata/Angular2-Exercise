@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 //Custom Component Imports
 import { PlayerListComponent } from '../players/player-list/player-list.component';
+import {PlayersRoutingModule} from './players.routing';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
+    imports: [BrowserModule, FormsModule, PlayersRoutingModule],
     declarations: [PlayerListComponent]
 })
 

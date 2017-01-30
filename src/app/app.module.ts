@@ -22,18 +22,10 @@ import { NotFoundComponent } from './not-found.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    PlayersModule,
     TeamsModule,
+    PlayersModule,
     RouterModule.forRoot(
       [
-        {
-          path: 'teams',
-          component: TeamsListComponent
-        },
-        {
-          path: 'players',
-          component: PlayerListComponent
-        },
         {
           path: '',
           component: PlayerListComponent
