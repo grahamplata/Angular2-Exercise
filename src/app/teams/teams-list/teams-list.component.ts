@@ -1,7 +1,8 @@
+import { ResApiService } from '../../common/restapi.service'
 import { Component, OnInit } from '@angular/core';
 
-import { Team } from '../shared/Team'
-import { MOCK_TEAMS } from '../shared/mock-teams'
+
+import { Team } from '../../common/teams/team';
 
 @Component({
   selector: 'app-teams-list',
@@ -9,12 +10,12 @@ import { MOCK_TEAMS } from '../shared/mock-teams'
   styleUrls: ['./teams-list.component.css']
 })
 export class TeamsListComponent implements OnInit {
-  listOfTeams = [];
+  listOfTeams: Team[];
 
-  constructor() { }
+  constructor(private apiService: ResApiService) { }
 
   ngOnInit() {
-    this.listOfTeams = MOCK_TEAMS;
+    this.listOfTeams = this.apiService.getListOfTeams();
   }
 
 }

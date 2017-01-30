@@ -1,7 +1,7 @@
+import { ResApiService } from '../../common/restapi.service'
 import { Component, OnInit } from '@angular/core';
 
-import {Player} from '../shared/player';
-import {MOCK_PLAYERS} from '../shared/mock-players';
+import { Player } from '../../common/players/player';
 
 @Component({
   selector: 'app-player-list',
@@ -9,12 +9,12 @@ import {MOCK_PLAYERS} from '../shared/mock-players';
   styleUrls: ['./player-list.component.css']
 })
 export class PlayerListComponent implements OnInit {
-  listOfPlayers = [];
+  listOfPlayers: Player[];
 
-  constructor() { }
+  constructor(private apiService: ResApiService) { }
 
   ngOnInit() {
-    this.listOfPlayers = MOCK_PLAYERS;
+    this.listOfPlayers = this.apiService.getListOfPlayers();
   }
 
 }
