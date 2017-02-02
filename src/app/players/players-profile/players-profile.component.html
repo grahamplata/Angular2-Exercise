@@ -1,0 +1,10 @@
+<div class="card" *ngIf="selectedPlayer">
+  <div class="card-block profile-heading">
+    <h4>{{selectedPlayer.firstName}} {{selectedPlayer.lastName}}</h4>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><Strong>Position: </Strong> {{ selectedPlayer.position }}</li>
+    <li class="list-group-item"><Strong>Height: </Strong> {{ selectedPlayer.height }}</li>
+    <li class="list-group-item"><Strong>Weight: </Strong> {{ selectedPlayer.weight }} lbs</li>
+  </ul>
+</div>

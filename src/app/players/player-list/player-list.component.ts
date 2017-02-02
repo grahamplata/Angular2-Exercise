@@ -10,11 +10,14 @@ import { Player } from '../../common/players/player';
 })
 export class PlayerListComponent implements OnInit {
   listOfPlayers: Player[];
+  selectedPlayer: Player;
 
   constructor(private apiService: ResApiService) { }
 
   ngOnInit() {
     this.listOfPlayers = this.apiService.getListOfPlayers();
   }
-
+  setSelectedPlayer(selectedPlayer: Player){
+    this.selectedPlayer = selectedPlayer;
+  }
 }

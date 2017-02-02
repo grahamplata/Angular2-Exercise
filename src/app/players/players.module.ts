@@ -6,10 +6,11 @@ import { CommonModule } from '../common/common.module';
 //Custom Component Imports
 import { PlayerListComponent } from '../players/player-list/player-list.component';
 import { PlayersRoutingModule } from './players.routing';
+import { PlayersProfileComponent } from './players-profile/players-profile.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, CommonModule, PlayersRoutingModule],
-    declarations: [PlayerListComponent]
+    declarations: [PlayerListComponent, PlayersProfileComponent]
 })
 
 export class PlayersModule { }

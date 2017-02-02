@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { PlayerListComponent } from './players/player-list/player-list.component';
 import { NotFoundComponent } from './not-found.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
