@@ -11,12 +11,14 @@ import { TeamsModule } from './teams/teams.module';
 import { AppComponent } from './app.component';
 import { PlayerListComponent } from './players/player-list/player-list.component';
 import { NotFoundComponent } from './not-found.component';
+import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MainNavigationComponent
   ],
   imports: [
     BrowserModule,
