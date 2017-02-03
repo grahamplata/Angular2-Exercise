@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { Team } from '../../common/teams/team';
 
 @Component({
   selector: 'app-team-edit',
@@ -6,4 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./team-edit.component.css']
 })
 export class TeamEditComponent {
+  @Input()
+  selectedTeam: Team;
+
+  saveTeam(){
+    this.selectedTeam = null;
+  }
+
 }

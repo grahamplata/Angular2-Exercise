@@ -11,11 +11,16 @@ import { Team } from '../../common/teams/team';
 })
 export class TeamsListComponent implements OnInit {
   listOfTeams: Team[];
+  selectedTeam: Team;
 
   constructor(private apiService: ResApiService) { }
 
   ngOnInit() {
     this.listOfTeams = this.apiService.getListOfTeams();
+  }
+
+  selectTeam(selectedTeam: Team) {
+    this.selectedTeam = selectedTeam;
   }
 
 }
