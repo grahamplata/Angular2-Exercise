@@ -7,6 +7,7 @@
       <th>Number of Losses</th>
       <th>Win Percentage</th>
       <th>Games Behind</th>
+      <th>&nbsp; </th>
     </tr>
   </thead>
   <tbody>
@@ -16,7 +17,10 @@
       <td>{{team.numberOfLosses}}</td>
       <td>{{team.winPercentage}}</td>
       <td>{{team.gamesBehind}}</td>
+      <td>
+        <a href="" class=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+      </td>
     </tr>
   </tbody>
 </table>
-<p><a routerLink="/players">Click here for Players Stats</a></p>
+<app-team-edit></app-team-edit>
