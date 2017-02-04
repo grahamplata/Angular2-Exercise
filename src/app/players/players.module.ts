@@ -7,10 +7,12 @@ import { CommonModule } from '../common/common.module';
 import { PlayerListComponent } from '../players/player-list/player-list.component';
 import { PlayersRoutingModule } from './players.routing';
 import { PlayersProfileComponent } from './players-profile/players-profile.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { RegistraionViewModel } from './registration/registrationViewModel';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, CommonModule, PlayersRoutingModule],
-    declarations: [PlayerListComponent, PlayersProfileComponent]
+    declarations: [PlayerListComponent, PlayersProfileComponent, RegistrationComponent]
 })
 
 export class PlayersModule { }
