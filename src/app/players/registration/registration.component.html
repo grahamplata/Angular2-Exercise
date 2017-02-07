@@ -92,19 +92,21 @@
       </div>
     </div>
   </div>
+
   <div class="form-group">
-    <label for="brokenFoot">Injuries</label>
+    <label for="brokenFoot">Past Injuries</label>
     <div>
-      <label class="form-check-inline" *ngFor="let injury of injuryLookupList; let i = index">
-          <input type="checkbox" class="form-check-input" [id]="injuryFieldList[i]" [name]="injuryFieldList[i]" [value]="injury" (change)="addOrRemoveInjury($event.target.value)">
-          {{injury}}
-        </label>
+      <label class="form-check-inline" *ngFor="let injury of injuryLookupList; let i = index;">
+        <input type="checkbox" class="form-check-input" [id]="injuryFieldList[i]" [name]="injuryFieldList[i]" [value]="injury" (change)="addOrRemoveInjury($event.target.value)" />
+        {{injury}}
+      </label>
     </div>
   </div>
+  
   <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" class="form-control" name="password" [(ngModel)]="registraionViewModel.password" id="password" placeholder="Enter password"
-    />
+    <input type="password" class="form-control" name="password" [(ngModel)]="registraionViewModel.password" id="password" placeholder="Enter password"/>
   </div>
+
   <button type="button" class="btn btn-default btn-primary">Submit</button>
 </form>
