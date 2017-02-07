@@ -8,7 +8,7 @@ import { PlayerListComponent } from '../players/player-list/player-list.componen
 import { PlayersRoutingModule } from './players.routing';
 import { PlayersProfileComponent } from './players-profile/players-profile.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { RegistraionViewModel } from './registration/registrationViewModel';
+import { RegistrationViewModel  } from './registration/registrationViewModel';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, CommonModule, PlayersRoutingModule],

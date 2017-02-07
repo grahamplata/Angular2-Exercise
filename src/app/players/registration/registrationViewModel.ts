@@ -1,6 +1,6 @@
 import { Position } from './position'
 
-export class RegistraionViewModel {
+export class RegistrationViewModel  {
     firstName: string;
     lastName: string;
     email: string;
